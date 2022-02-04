@@ -20,7 +20,7 @@ const coinReducer = (state = initialState, action) => {
                 visibility = false;
             }
             if(photo.length>8){
-               dynamic.length = state.initialLoad;
+               dynamic.length = 8;
             }
             return { ...state, photos: photo,dynamicPhotos : dynamic, imageText : action.payload.imageText,initialLoad : 8,nothingToLoad : visibility  };
 
